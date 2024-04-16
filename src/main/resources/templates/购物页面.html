@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>购物页面</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  .container {
+    width: 90%;
+    margin: 10px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .item {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+  .price-summary {
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <p>促销2次体验</p>
+    <p>支持场馆：全部场馆</p>
+    <p>使用周期：5天</p>
+    <p>使用次数：10次</p>
+    <p>售价：￥100元<del>￥200元</del></p>
+  </div>
+  <div class="item">
+    <p>48元（1次）</p>
+    <p>原价￥68</p>
+    <p>使用周期：5天</p>
+    <!-- Radio button for selecting this option -->
+  </div>
+  <div class="item">
+    <p>168元（6次）</p>
+    <p>原价￥408</p>
+    <p>使用周期：30天</p>
+    <!-- Radio button for selecting this option -->
+  </div>
+  <!-- ...other items... -->
+  <div class="price-summary">
+    <p>选择套餐总金额：</p>
+    <select name="combo" id="combo">
+      <!-- Option values go here -->
+    </select>
+    <p>￥48.00</p>
+  </div>
+  <button class="btn">立即购买</button>
+  <!-- ...other elements like footer... -->
+</div>
+
+</body>
+</html>
